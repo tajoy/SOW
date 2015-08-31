@@ -1,1 +1,2 @@
-# SOW
+# Strings-Of-the-World
+... coding ...
