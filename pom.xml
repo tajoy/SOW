@@ -9,8 +9,19 @@
 
   <name>sow</name>
   <url>http://github.com/tajoy/sow</url>
-
+  <profiles>
+    <profile>
+      <id>jdk-1.8</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+        <jdk>1.8</jdk>
+      </activation>
+    </profile>
+  </profiles>
   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <repositories>
@@ -52,18 +63,41 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-        <groupId>org.clamshellcli</groupId>
-        <artifactId>clamshell-api</artifactId>
-        <version>0.5.2</version>
+      <groupId>org.clamshellcli</groupId>
+      <artifactId>clamshell-api</artifactId>
+      <version>0.5.2</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-        <groupId>org.clamshellcli</groupId>
-        <artifactId>clamshell-impl-core</artifactId>
-        <version>0.5.2</version>
+      <groupId>com.typesafe</groupId>
+      <artifactId>config</artifactId>
+      <version>1.3.0</version>
       <scope>runtime</scope>
     </dependency>
-
+    <dependency>
+      <groupId>org.clamshellcli</groupId>
+      <artifactId>clamshell-impl-core</artifactId>
+      <version>0.5.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.lanterna</groupId>
+      <artifactId>lanterna</artifactId>
+      <version>3.0.0-beta1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongo-java-driver</artifactId>
+      <version>3.0.4</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>0.9.9-RC1</version>
+      <scope>runtime</scope>
+    </dependency>
   </dependencies>
 
 </project>
